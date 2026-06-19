@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Stok Barang</h1>
+    <table border="1">
+        <tr><th>Kode</th><th>Nama</th><th>Stok</th></tr>
+        {% for kode, info in stok_data.items() %}
+        <tr>
+            <td>{{ kode }}</td>
+            <td>{{ info.nama }}</td>
+            <td>{{ info.stok }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
